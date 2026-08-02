@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study War 12th - Future of Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header / Logo Area -->
+        <header class="app-header">
+            <div class="logo-box">
+                <div class="neon-icon">
+                    <span class="left-wing"></span>
+                    <span class="center-dot"></span>
+                    <span class="right-wing"></span>
+                </div>
+                <div class="logo-text">
+                    <h1>Study <span class="highlight">War 12th</span></h1>
+                    <p class="tagline">FUTURE OF LEARNING</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Feature Tabs -->
+        <div class="tab-menu">
+            <button class="tab-btn active" onclick="switchTab('tutor')"><i class="fas fa-robot"></i> AI Tutor</button>
+            <button class="tab-btn" onclick="switchTab('routine')"><i class="fas fa-calendar-alt"></i> Routine Planner</button>
+        </div>
+
+        <!-- Section 1: AI Tutor Chat Area -->
+        <main id="tutor-section" class="tab-content active">
+            <div id="chat-box" class="chat-box">
+                <div class="message bot-message">
+                    नमस्ते! मैं आपका <b>Study War 12th</b> AI ट्यूटर हूँ। आप मुझसे अपने 12th Board, IIT-JEE, NEET या किसी भी विषय के डाउट्स (Physics, Chemistry, Biology, Math, Hindi, English) बेसिक से एडवांस तक पूछ सकते हैं।
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="user-input" placeholder="अपना सवाल हिंदी, English या Hinglish में पूछें..."></textarea>
+                <button id="send-btn" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </main>
+
+        <!-- Section 2: Routine Planner -->
+        <main id="routine-section" class="tab-content">
+            <div class="routine-card">
+                <h2><i class="fas fa-clock"></i> डेली रूटीन जनरेटर</h2>
+                <div class="form-group">
+                    <label>सुबह उठने का समय:</label>
+                    <input type="time" id="wake-time" value="06:00">
+                </div>
+                <div class="form-group">
+                    <label>स्कूल / कोचिंग का समय:</label>
+                    <input type="text" id="school-time" placeholder="e.g., 8:00 AM से 2:00 PM">
+                </div>
+                <div class="form-group">
+                    <label>सेल्फ-स्टडी के लिए कुल घंटे:</label>
+                    <input type="number" id="study-hours" value="4" min="1" max="12">
+                </div>
+                <button class="action-btn" onclick="generateRoutine()">प्रैक्टिकल टाइम-टेबल बनाएं</button>
+                
+                <div id="routine-output" class="routine-result"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
