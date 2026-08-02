@@ -1,7 +1,6 @@
 // GEMINI API KEY PLACEHOLDER
-const GEMINI_API_KEY = "AQ.Ab8RN6JkptS6RtmjYdfnCSNqYDXrOagKnKIXiGn_Xt25nwDhLA";
+const GEMINI_API_KEY = AQ.Ab8RN6IKKRjxpSSQuaTvAU2ZjcG8gDFG6P8El0l8CnE_fGPntg;
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
-
 // System Prompt (Academic Guardrails + Multilingual Support)
 const SYSTEM_PROMPT = `You are 'Study War 12th AI', a personal AI tutor created by Ayushman for Class 10th, 11th, 12th and competitive exam students.
 RULES & CONSTRAINTS:
