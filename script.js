@@ -1,5 +1,5 @@
 // API Configuration
-const GEMINI_API_KEY = "AQ.Ab8RN6IKKRjxpSSQuaTvAU2ZjcG8gDFG6P8El0l8CnE_fGPntg";
+const GEMINI_API_KEY =AQ.Ab8RN6L05K8vTuf4a1sQNqWkH_BME3IGYgEwbNPHjeb-1ypcUg;
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 // System Prompt (Academic Guardrails + Multilingual Support)
